@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+.columnleft {
+  width: 67px;
+  height: 565px;
+}
+.chat {
+  width: 30px;
+  color: white;
+  margin: 15px 15px;
+}
+ul.a {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}

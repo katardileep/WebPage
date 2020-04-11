@@ -1,0 +1,44 @@
+<!--    <p style="text-align: center;">Header of the Page {{displaystring}}</p>-->
+<!--<input type="text" value="Dileep">-->
+<!--<input type="text" [ngModel]=displaystring>-->
+<!--<input type="button" (click)="sampleclick()">-->
+
+<div class="header">
+  <a href="#" class="imglogoa">
+    <div class="imglogo">
+      <img src="assets/img.logo.png">
+    </div>
+  </a>
+  <div class="profilename">
+    <button (click)="onlyObservable()">profile page</button>
+    <!--<p>profile page</p>-->
+  </div>
+  <div class="profilesearch">
+    <input type="text" placeholder="Search here people or pages...">
+    <img src="assets/search.png" alt="search" class="searchlogo">
+  </div>
+  <div class="findfriends">
+    <a href="#">
+      <p class="findfriendstext">Find Friends</p>
+    </a>
+  </div>
+  <div class="profileicons">
+    <tr>
+      <td><img src="assets/chatnew.png" alt="chat" class="chat"></td>
+      <td><img src="assets/chat.png" alt="messages" class="chat"></td>
+      <td><img src="assets/notification.png" alt="notification" class="chat"></td>
+    </tr>
+  </div>
+  <div class="profileaccount">
+    <div class="profileimage">
+      <img src="assets/author-page.jpg" alt="Profile image" class="profileimg">
+    </div>
+    <div class="profile">
+      <p style="font-size: 12px;">James Spiegel</p>
+      <p style="font-size: 7px; color: gray;">SPACE COWBOY</p>
+    </div>
+    <div style="padding: 15px 15px;">
+      <button routerLink="/loginpage" class="btn">Logout</button>
+    </div>
+  </div>
+</div>

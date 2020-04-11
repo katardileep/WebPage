@@ -1,0 +1,21 @@
+#otr {
+   width: 570px;
+   display: flex;
+}
+#otrb {
+   border: 0.1px solid white;
+   width: 570px;
+   background-color: white;
+}
+
+#div1 {
+   /* padding-left: 15px;*/
+   width: 80px;
+}
+.chat {
+   width: 35px;
+   color: white;
+   margin-left: 10px;
+   margin-top: 05px;
+   border-radius: 50%;
+   }

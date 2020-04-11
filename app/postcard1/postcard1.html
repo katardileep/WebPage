@@ -1,0 +1,27 @@
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="otrb">
+    <div id="otr">
+        <div id="div1">
+            <!---   <img src="Profileimage.png" alt="Profile image" style="height:60px;width: 60px;text-align:center;padding: 10px;">-->
+            <img src="{{test1.profile_image}}" alt="Profile image"
+                style="float: right; width: 35px; padding-top: 5px;">
+        </div>
+        <div style="height: 50px; width: 320px; border: 0.1px solid white;">
+            <p style="font-family: Calibri; font-size: 12px;"><b>{{test1.user}}</b><br>{{test1.hours_back}}</p>
+        </div>
+    </div>
+    <p style="padding-left: 50px;font-family: Calibri;">{{test1.post_title}}</p>
+    <div style="width: 570px; border: 0.1px solid white; text-align: center;">
+        <video width="320" height="240px" controls>
+            <source src="{{test1.post_source}}" type="video/mp4">
+        </video>
+    </div>
+    <div style="width: 570px;">
+        <p style="padding-left: 50px; padding-top: 8px;">
+            <i class="fa fa-heart-o" style="font-size: 24px;color: gray;"></i>{{test1.no_of_likes}}
+        </p>
+    </div>
+</body>

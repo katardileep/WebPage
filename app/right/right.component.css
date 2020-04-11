@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+.columnright {
+  width: 67px;
+  height: 565px;
+  right: 0px;
+}
+.chat {
+  width: 43px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 50%;
+  }
+.chat1 {
+  width: 65px;
+  color: black;
+  background-color: lightgreen;
+  margin-top: 5px;
+  }

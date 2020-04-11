@@ -1,0 +1,72 @@
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="otrb">
+    <div id="otr">
+        <div id="div1">
+            <!---   <img src="Profileimage.png" alt="Profile image" style="height:60px;width: 60px;text-align:center;padding: 10px;">-->
+            <img src="{{test1.profile_image}}" alt="Profile image" style="float: right; width: 35px; padding-top: 5px;">
+        </div>
+        <div style="height: 50px; width: 320px; border: 0.1px solid white;">
+            <p style="font-family: Calibri; font-size: 12px;"><b>{{test1.user}}</b><br>{{test1.hours_back}}</p>
+        </div>
+    </div>
+    <div style="height: 80px;width: 570px; border: 0.1px solid white;">
+        <p style="padding-left: 15px;font-family:Calibri;">{{test1.story_content}}</p>
+        <!--<button (click)="myClickFunction($event)">Click Me </button>
+        <app-postcard-content></app-postcard-content>-->
+    </div>
+    <div id="otr" style="border-top-style:ridge; width: 570px; border: 0.5px thin black; align-items: center;">
+        <div style="width: 80px;">
+            <p style="padding: 10px;">
+                <i class="fa fa-heart-o" style="font-size: 32px;color: gray; align-items: center;"></i>{{test1.no_of_heart_likes}}
+            </p>
+        </div>
+        <div style="width: 110px; height: 60px;">
+            <p>
+                <img src="{{test1.profile_image_of_likes[0]}}" alt="Profile image"
+                    style="width: 30px;border-radius: 50%;">
+                <img src="{{test1.profile_image_of_likes[1]}}" alt="Profile image"
+                    style="width: 30px;border-radius: 50%;">
+                <img src="{{test1.profile_image_of_likes[2]}}" alt="Profile image"
+                    style="width: 30px;border-radius: 50%;">
+            </p>
+        </div>
+        <div style="width: 260px;">
+            <p style="font-family: Calibri;"><b>{{test1.name_of_likes}}</b>and<br>{{test1.no_of_liked}} more liked this
+            </p>
+        </div>
+        <div style="width: 120px;padding: 20px; margin: 0px;">
+            <i class="fa fa-comments-o" style="font-size: 32px;color: gray;"></i>{{test1.no_of_comments}}
+            <i class="fa fa-comments-o" style="font-size: 32px;color: gray;"></i>{{test1.no_of_replies}}
+        </div>
+    </div>
+    <div *ngFor="let comment of test1.comments">
+        <div style="padding-left: 50px; display: flex;">
+            <div style="height: 50px;">
+                <!---   <img src="Profileimage.png" alt="Profile image" style="height:60px;width: 60px;text-align:center;padding: 10px;">-->
+                <img src="{{comment.comment_profile_image}}" alt="Profile image" class="chat"
+                    style="float: right; width: 35px; padding-top: 5px;">
+            </div>
+            <div style="height: 50px; width: 320px; border: 0.1px solid white;">
+                <p style="font-family: Calibri; font-size: 12px;">
+                    <b>{{comment.comment_user}}</b><br>{{comment.comment_hours_back}}</p>
+            </div>
+        </div>
+        <p style="font-family: Calibri;padding-left: 100px; font-size: 12px;border: 0.5px solid white;;">{{comment.comment_lines}}</p>
+        <div style="padding-left: 100px; border: 0.5px solid white; display: flex;">
+            <div style="height: 50px;">
+                <!---   <img src="Profileimage.png" alt="Profile image" style="height:60px;width: 60px;text-align:center;padding: 10px;">-->
+                <img src="{{comment.subcomments.subcomment_profile_image}}" alt="Profile image" class="chat"
+                    style="float: right; width: 35px; padding-top: 5px;">
+            </div>
+            <div style="height: 50px; width: 320px; border: 0.1px solid white;">
+                <p style="font-family: Calibri; font-size: 12px;">
+                    <b>{{comment.subcomments.subcomment_user}}</b><br>{{comment.subcomments.subcomment_hours_back}}</p>
+            </div>
+        </div>
+        <p style="font-family: Calibri;padding-left: 150px; font-size: 12px;border: 0.5px solid white;;">{{comment.subcomments.subcomment_lines}}</p>
+    </div>
+</body>

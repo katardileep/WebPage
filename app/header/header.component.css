@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    margin: 0px;
+}
+.imglogo {
+    position: relative;
+}
+.imglogoa {
+    width: 5%;
+    background-color: #ff0040;
+    padding: 15px;
+    align-items: center;
+
+}
+.profilename {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 15%;
+    background-color: #3f4257;
+    padding: 15px 15px;
+}
+.profilename p {
+    color: white;
+    font-size: 12px;
+    padding-top: 11px;
+    text-align: center;
+}
+.profilesearch {
+    width: 35%;
+    opacity: 0.9;
+    background-color: #3f4257;
+}
+input[type=text] {
+    width: 50%;
+    background-color: #3f4257;
+    opacity: 0.9;
+    font-size: 14px;
+    padding: 24px 20px 18px 20px;
+    margin: 0;
+    color: white;
+    border: 0;
+  }
+.searchlogo {
+    float: right;
+    padding-top: 18px;
+    height: 70%;
+    padding-right: 10px;
+}
+.findfriends {
+    width: 10%;
+    background-color: #3f4257;
+    display: block;
+    text-align: center;
+    
+}
+.findfriendstext {
+    /*text-transform: uppercase;*/
+    font-size: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px;
+}
+.findfriendstext:hover {
+    color: red;
+  }
+.profileicons {
+    width: 16%;
+    background-color: #3f4257;
+    /*display: block;*/
+}
+.chat {
+    width: 60px;
+    padding: 15px;
+    color: white;
+}
+.profileaccount {
+    width: 19%;
+    display: flex;
+    background-color: #3f4257;
+}
+.profileimage {
+    width: 50px;
+}
+.profileimg {
+    border-radius: 50%;
+    top: 10px;
+    position: relative;
+}
+.profile {
+    line-height: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 10px;
+}
+.btn {
+    background-color:grey;
+    font-size: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
